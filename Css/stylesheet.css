@@ -1,0 +1,430 @@
+/*Start variables*/
+:root {
+    --main-color: #ed2024;
+}
+
+/*end variables*/
+
+/* Start Global Rules*/
+
+
+body {
+    font-family: "work san", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.contanier {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*small*/
+@media (min-width:768px) {
+    .contanier {
+        width: 750px
+    }
+}
+
+/*medium*/
+@media (min-width:992px) {
+    .contanier {
+        width: 970px
+    }
+}
+
+/*large*/
+@media (min-width:1200px) {
+    .contanier {
+        width: 1170px
+    }
+}
+
+ul {
+    list-style: none
+}
+
+/* end Global Rules*/
+/* Start spacial header*/
+.spicial-header {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 800;
+    color: #b900008a;
+    margin: 0;
+    letter-spacing: -5px
+}
+
+.spicial-header + p {
+    text-align: center;
+    margin: -25px;
+    font-size: 30px;
+    color: #01588c;
+}
+
+/* End spacial header*/
+/*Start navbar*/
+
+.navbar {
+    padding-top: 5px;
+    background-color: #252c37;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar .contanier {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center
+}
+
+.navbar .contanier .logo {
+    width: 70px
+}
+
+.navbar .contanier .logo:hover {
+    cursor: pointer
+}
+
+
+.navbar .contanier .links ul a {
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 700;
+    color: white
+}
+
+.navbar .contanier .links ul a:hover {
+    padding: 5px;
+    color: var(--main-color)
+}
+
+.navbar .contanier .links ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/*End navbar*/
+/*Start gotopbtn*/
+
+.gotopbtn {
+    position: fixed;
+    bottom: 35px;
+    right: 50px;
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+/*
+.gotopbtn:hover {
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+
+}
+*/
+
+/*End gotopbtn*/
+/*Start landing*/
+
+.landing {
+    background-image: url(../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.landing .intro {
+    padding: 300px 0 0 0;
+
+}
+
+.landing .intro h1 {
+    margin: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    width: 480px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    padding-left: 15px;
+}
+
+.landing .intro h1 span {
+    color: var(--main-color)
+}
+
+.landing .intro .resume {
+    letter-spacing: 4px;
+    color: white;
+    background-color: rgb(255, 0, 68);
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 10px;
+    width: 250px;
+    height: 70px;
+    box-shadow: inset 0 0 0 0 #20EDE9;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.landing .intro .resume:hover {
+    box-shadow: inset 250px 0 0 0 #20EDE9;
+    cursor: pointer;
+    color: black
+}
+
+.landing .intro i {
+    font-size: 45px;
+    color: #dc0000;
+    margin: 37px 0px -82px 35px
+}
+
+/*End landing*/
+/*Start Services*/
+.services {
+    height: 990px;
+    display: flex;
+    align-items: center;
+    align-content: space-between
+}
+
+.services .info {
+    text-align: center;
+    padding: 30px 300px 20px 300px;
+}
+
+.services .services-types {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services .services-types i {
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 10px;
+    color: yellow
+}
+
+.services .services-types h4 {
+    font-weight: 800;
+    color: var(--main-color)
+}
+
+.services .services-types .serv {
+    margin: 10px;
+    padding: 10px;
+    background-image: url(../images/stil-flRm0z3MEoA-unsplash.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    color: black
+}
+
+/*End Services*/
+/*Start projects*/
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px
+}
+
+.projects .some-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .some-work .project-1 {
+    width: 570px;
+    height: 350px;
+    background-color: #434E5F;
+    color: white;
+
+}
+
+.projects .some-work .project-1 h3 {
+    font-size: 50px;
+    padding: 10px 0;
+    margin: 0;
+
+}
+
+.projects .some-work .project-1 h5 {
+    margin: 0;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.projects .some-work .project-1 p {
+    margin: 0;
+    font-size: 15px
+}
+
+.projects .some-work .project-2 {
+    width: 570px;
+    height: 350px;
+    background-image: url(../images/stil-flRm0z3MEoA-unsplash.jpg);
+    background-size: cover;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.projects .some-work .project-2:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+
+}
+
+
+/*End projects*/
+/*Start About*/
+.about {
+    height: 946px;
+    padding-top: 55px;
+}
+
+.about .all {
+    display: flex;
+    align-content: flex-start;
+    padding: 160px 0
+}
+
+.about .all img {
+    width: 50%;
+    height: 470px;
+}
+
+.about .all .contant {
+    padding: 50px 0px 0px 50px;
+}
+
+.about .all .contant h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.about .all .contant h4 {
+    font-size: 20px;
+    margin: 0
+}
+
+.about .all .contant button {
+    font-size: 20px;
+    width: 240px;
+    height: 55px;
+    border: var(--main-color) 3px solid;
+    background-color: white;
+    border-radius: 10px
+}
+
+.about .all .contant button:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white
+}
+
+/*End About*/
+/*Start Contact*/
+
+.contact {
+    height: 700px;
+
+}
+
+
+.contact .contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+
+.contact .contact-items .contact-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 10px;
+    width: 340px;
+    box-shadow: 0 0px 18px 0 #0000002c;
+    transition: .3s ease
+}
+
+.contact .contact-items .contact-item:hover {
+    box-shadow: 0 0px 5px 0 #0000002c;
+    cursor: pointer
+}
+
+.contact .contact-items .contact-item .info h1 {
+    font-size: 25px;
+
+}
+
+.contact .contact-items .contact-item .info h2 {
+    font-size: 12px;
+
+}
+
+
+/*End Contact*/
+/*Start footer*/
+.footer {
+    background-color: #252c37;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column
+}
+
+.footer .logo {
+    width: 125px;
+    margin: -10px
+}
+
+.footer .icons {
+    text-align: center;
+    font-size: 35px;
+    margin: -10px
+}
+
+.footer .icons i {
+    padding: 10px;
+    color: white
+}
+
+.footer .icons i:hover {
+    cursor: pointer;
+    color: var(--main-color)
+}
+
+.footer p {
+    color: white;
+    margin-top: 5px
+}
+
+.footer p span {
+    color: var(--main-color)
+}
+
+/*End footer*/
